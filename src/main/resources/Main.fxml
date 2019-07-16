@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+
+<AnchorPane prefHeight="384.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.email.post.Controller.MainController">
+   <children>
+      <TextField fx:id="username" layoutX="275.0" layoutY="177.0" />
+      <PasswordField fx:id="userpassword" layoutX="275.0" layoutY="231.0" />
+      <Label layoutX="139.0" layoutY="180.0" text="邮箱账号：" />
+      <Label layoutX="139.0" layoutY="236.0" text="邮箱密码：" />
+      <Label layoutX="139.0" layoutY="128.0" text="SMTP 服务器：" />
+      <Button layoutX="177.0" layoutY="286.0" mnemonicParsing="false" onAction="#login" text="登录" />
+      <Button layoutX="351.0" layoutY="286.0" mnemonicParsing="false" onAction="#reset" text="重置" />
+      <ChoiceBox fx:id="SMTP" layoutX="275.0" layoutY="123.0" prefHeight="30.0" prefWidth="202.0" >
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="smtp.qq.com" />
+               <String fx:value="smtp.sina.com" />
+               <String fx:value="smtp.sohu.com" />
+               <String fx:value="smtp.sogou.com" />
+               <String fx:value="smtp.gmail.com" />
+            </FXCollections>
+         </items>
+      </ChoiceBox>
+      <Label fx:id="warning" layoutX="256.0" layoutY="350.0" text="" />
+   </children>
+</AnchorPane>

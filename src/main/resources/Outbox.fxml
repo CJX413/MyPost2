@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.email.post.Controller.OutboxController">
+   <children>
+      <ScrollPane layoutX="-2.0" prefHeight="432.0" prefWidth="709.0">
+         <content>
+            <ListView fx:id="listView" onMouseClicked="#handleMouseClick" prefHeight="431.0" prefWidth="707.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

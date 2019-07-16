@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="684.0" prefWidth="843.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.email.post.Controller.MailController">
+   <children>
+      <StackPane layoutX="-3.0" layoutY="140.0" prefHeight="543.0" prefWidth="849.0">
+         <children>
+            <HTMLEditor fx:id="content" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" prefHeight="539.0" prefWidth="849.0" />
+         </children>
+      </StackPane>
+      <TextField fx:id="addressee" layoutX="95.0" layoutY="30.0" prefHeight="30.0" prefWidth="251.0" />
+      <TextField fx:id="topical" layoutX="95.0" layoutY="102.0" prefHeight="30.0" prefWidth="251.0" />
+      <Label layoutX="28.0" layoutY="35.0" text="收件人：" />
+      <Label layoutX="28.0" layoutY="107.0" text="主题：" />
+   </children>
+</AnchorPane>
